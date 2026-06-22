@@ -9,7 +9,7 @@ Humation v1 までに確定した設計判断の要約。
 - **このリポジトリ(endo-yusuke/humation)がOSSの正本。** runtime packages、
   asset snapshots、registry block、docs をここで管理する。
 - **アセットとmanifestは生成物。** `packages/assets-humation-1` の
-  manifest.json / assets/\*\* / src/embedded.ts 等は asset export pipeline で
+  manifest.json / assets/\*\* / src/embedded.ts 等は同期された snapshot として
   まとめて更新する。
 - 検証の基準: asset tests、renderer tests、pack smoke で manifest の整合性と
   package consumer behavior を確認する。
