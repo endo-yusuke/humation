@@ -29,8 +29,11 @@ describe('<Avatar>', () => {
       />
     );
 
-    expect(html).toContain('data-part-id="020"'); // braids = head 020
-    expect(html).toContain('data-group-id="cat"');
+    expect(html).toContain('data-hm-part-id="hm1-p-000020"'); // braids
+    expect(html).toContain('data-hm-source-part-id="020"');
+    expect(html).toContain('data-hm-selection-slot="item"');
+    expect(html).toContain('data-hm-part-id="hm1-p-000068"'); // calico-cat
+    expect(html).toContain('data-hm-source-group-id="cat"');
     expect(html).toContain('--hm-hair:#4A3728');
     expect(html).toContain('--hm-skin:#F4C9A8');
     expect(html).toContain('<title>Felix</title>');

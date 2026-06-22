@@ -213,10 +213,20 @@ function renderFragment(
   const transform = fragment.transform
     ? `translate(${formatNumber(offset.x)}, ${formatNumber(offset.y)}) ${fragment.transform}`
     : `translate(${formatNumber(offset.x)}, ${formatNumber(offset.y)})`;
-  const sourceGroupId = part.source?.groupId ?? part.selectionSlot;
-  const sourcePartId = part.source?.partId ?? part.id;
+  const attributes = [
+    ['data-hm-layer-slot', fragment.layerSlot],
+    ['data-hm-part-id', part.id],
+    ['data-hm-selection-slot', part.selectionSlot],
+    ['data-hm-source-group-id', part.source?.groupId],
+    ['data-hm-source-part-id', part.source?.partId],
+    ['transform', transform],
+  ]
+    .flatMap(([name, value]) =>
+      value === undefined ? [] : [`${name}="${escapeAttr(value)}"`]
+    )
+    .join(' ');
 
-  return `<g data-group-id="${escapeAttr(sourceGroupId)}" data-part-id="${escapeAttr(sourcePartId)}" transform="${escapeAttr(transform)}">${content}</g>`;
+  return `<g ${attributes}>${content}</g>`;
 }
 
 function formatCssVariables(colors: Record<string, string>) {

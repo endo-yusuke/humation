@@ -23,8 +23,11 @@ describe('renderAvatarMarkup', () => {
       background: 'transparent',
     });
 
-    expect(markup).toContain('data-part-id="020"');
-    expect(markup).toContain('data-group-id="cat"');
+    expect(markup).toContain('data-hm-part-id="hm1-p-000020"');
+    expect(markup).toContain('data-hm-source-part-id="020"');
+    expect(markup).toContain('data-hm-selection-slot="item"');
+    expect(markup).toContain('data-hm-part-id="hm1-p-000068"');
+    expect(markup).toContain('data-hm-source-group-id="cat"');
     expect(markup).toContain('width="96"');
     expect(markup).toContain('height="96"');
     expect(markup).toContain('<title>Felix &lt;3</title>');

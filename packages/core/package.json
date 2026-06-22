@@ -4,6 +4,15 @@
   "type": "module",
   "description": "Core Humation avatar manifest and SVG renderer.",
   "license": "MIT",
+  "homepage": "https://github.com/endo-yusuke/humation#readme",
+  "bugs": {
+    "url": "https://github.com/endo-yusuke/humation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endo-yusuke/humation.git",
+    "directory": "packages/core"
+  },
   "keywords": [
     "avatar",
     "svg",

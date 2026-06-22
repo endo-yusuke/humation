@@ -26,9 +26,9 @@ assets/**/*.svg
 When used with `@humation/core`, rendered output keeps colors as CSS custom
 properties such as `--hm-hair`, `--hm-skin`, and `--hm-stroke`.
 
-`manifest.json`, `assets/**`, and the generated `src/` manifest modules are
-produced by the Humation asset export pipeline. Prefer updating them through
-that pipeline so raw SVGs and embedded manifests stay in sync.
+`manifest.json`, `assets/**`, and the generated `src/` manifest modules are a
+synchronized asset snapshot. Update them together so raw SVGs and embedded
+manifests stay in sync.
 
 ## License
 

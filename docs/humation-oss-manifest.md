@@ -182,8 +182,8 @@ type AliasEntry = {
 
 The referenced SVG carries its own color bindings, e.g.
 `<path fill="var(--hm-hair, #000000)" .../>`. Marker colors used by the
-artist in the source design are translated into these variables by the
-export pipeline; they never appear in published assets.
+artist in the source design are converted before publication; published
+assets contain CSS variables directly.
 
 ## Example: Multi-Layer Part
 
@@ -260,9 +260,11 @@ Recommended output attributes:
 
 ```xml
 <g
-  data-hm-layer-slot="head-main"
+  data-hm-layer-slot="head"
   data-hm-part-id="hm1-p-000023"
   data-hm-selection-slot="head"
+  data-hm-source-group-id="head"
+  data-hm-source-part-id="023"
 >
 ```
 
@@ -344,8 +346,7 @@ packages/assets-humation-1
 
 `manifest.json`, `assets/**/*.svg`, `src/embedded.ts`, `src/manifest-json.ts`,
 and `src/manifest.ts` in `packages/assets-humation-1` are generated snapshots.
-Prefer updating them through the asset export pipeline so raw SVGs and
-embedded manifests stay in sync.
+Update them together so raw SVGs and embedded manifests stay in sync.
 
 The exported JSON intentionally omits PoC-only embedded `layers[].svg` values
 and keeps only `svgPath`. The embedded manifest module (`src/embedded.ts`)
