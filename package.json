@@ -2,6 +2,15 @@
   "name": "humation",
   "private": true,
   "description": "Humation - avatar engine and official asset packages",
+  "license": "MIT",
+  "homepage": "https://github.com/endo-yusuke/humation#readme",
+  "bugs": {
+    "url": "https://github.com/endo-yusuke/humation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endo-yusuke/humation.git"
+  },
   "workspaces": [
     "packages/*",
     "examples/*"

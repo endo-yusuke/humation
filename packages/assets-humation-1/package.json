@@ -4,6 +4,15 @@
   "type": "module",
   "description": "Humation 1 avatar manifest and SVG assets.",
   "license": "MIT",
+  "homepage": "https://github.com/endo-yusuke/humation#readme",
+  "bugs": {
+    "url": "https://github.com/endo-yusuke/humation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endo-yusuke/humation.git",
+    "directory": "packages/assets-humation-1"
+  },
   "keywords": [
     "avatar",
     "svg",

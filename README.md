@@ -4,6 +4,12 @@
 One seed in, one deterministic avatar out. No AI, no API calls.
 
 <p align="center">
+  <a href="https://www.npmjs.com/package/@humation/react"><img src="https://img.shields.io/npm/v/@humation/react?label=%40humation%2Freact" alt="@humation/react on npm" /></a>
+  <a href="https://github.com/endo-yusuke/humation/releases"><img src="https://img.shields.io/github/v/release/endo-yusuke/humation?label=release" alt="GitHub release" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
+</p>
+
+<p align="center">
   <img src=".github/hero.png" alt="Kawaii avatars in your product — Feed, Chats, and Account screens" width="720" />
 </p>
 
@@ -136,6 +142,7 @@ Hex values work with or without `#`.
 | [`@humation/core`](packages/core) | Manifest validation, SVG rendering, and UI helpers |
 | [`@humation/assets-humation-1`](packages/assets-humation-1) | Humation 1 manifest and SVG assets (86 parts) |
 | [`@humation/react`](packages/react) | `<Avatar>` React component |
+| [`@humation/web-component`](packages/web-component) | `<humation-avatar>` custom element |
 
 > v1.0.0
 

@@ -4,6 +4,15 @@
   "type": "module",
   "description": "<humation-avatar> custom element for Humation avatars.",
   "license": "MIT",
+  "homepage": "https://github.com/endo-yusuke/humation#readme",
+  "bugs": {
+    "url": "https://github.com/endo-yusuke/humation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/endo-yusuke/humation.git",
+    "directory": "packages/web-component"
+  },
   "keywords": [
     "avatar",
     "svg",
