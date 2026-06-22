@@ -15,7 +15,7 @@ import { execSync } from 'node:child_process';
 import { existsSync, readFileSync, unlinkSync } from 'node:fs';
 import path from 'node:path';
 
-const PACKAGES = ['core', 'assets-humation-1', 'react'];
+const PACKAGES = ['core', 'assets-humation-1', 'react', 'web-component'];
 
 const args = process.argv.slice(2);
 const tagIdx = args.indexOf('--tag');
