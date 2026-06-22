@@ -1,0 +1,12 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Humation",
+      "description": "Skills for implementing Humation avatars in apps.",
+      "skills": ["humation-avatar"]
+    }
+  ]
+}
+

@@ -6,6 +6,7 @@ One seed in, one deterministic avatar out. No AI, no API calls.
 <p align="center">
   <a href="https://www.npmjs.com/package/@humation/react"><img src="https://img.shields.io/npm/v/@humation/react?label=%40humation%2Freact" alt="@humation/react on npm" /></a>
   <a href="https://github.com/endo-yusuke/humation/releases"><img src="https://img.shields.io/github/v/release/endo-yusuke/humation?label=release" alt="GitHub release" /></a>
+  <a href="https://skills.sh/endo-yusuke/humation"><img src="https://skills.sh/b/endo-yusuke/humation" alt="Humation on skills.sh" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
 </p>
 
@@ -76,7 +77,16 @@ const thumbnail = createPartPreview(humation1, heads[0], {
 <!-- Avatar builder UI component (copy-paste, not a package) will be available
      via the shadcn registry once this repository is public. -->
 
-### 3. Render SVG anywhere (no framework)
+### 3. Give an AI coding agent Humation context
+
+```bash
+npx skills add endo-yusuke/humation --skill humation-avatar
+```
+
+This installs concise package-selection and implementation guidance for agents
+that support Skills.sh.
+
+### 4. Render SVG anywhere (no framework)
 
 ```bash
 npm install @humation/core @humation/assets-humation-1

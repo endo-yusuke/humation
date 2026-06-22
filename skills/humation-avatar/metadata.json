@@ -1,0 +1,14 @@
+{
+  "version": "1.0.1",
+  "organization": "Humation",
+  "date": "June 2026",
+  "abstract": "Guidance for AI coding agents implementing Humation hand-drawn deterministic avatars. Covers package selection, React rendering, raw SVG rendering, web components, the shadcn-style avatar builder, picker previews, state persistence, and color slots.",
+  "references": [
+    "https://github.com/endo-yusuke/humation",
+    "https://humation.app/docs",
+    "https://www.npmjs.com/package/@humation/react",
+    "https://www.npmjs.com/package/@humation/core",
+    "https://www.npmjs.com/package/@humation/assets-humation-1"
+  ]
+}
+

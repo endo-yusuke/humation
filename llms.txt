@@ -1,0 +1,49 @@
+# Humation
+
+Humation is a hand-drawn deterministic avatar engine for apps. It renders local
+SVG assets from a seed or explicit selections. No AI generation and no Humation
+API call is required for rendering.
+
+Primary docs:
+- https://humation.app/docs
+- https://github.com/endo-yusuke/humation
+
+Packages:
+- `@humation/react`: React `<Avatar>` component.
+- `@humation/assets-humation-1`: Humation 1 manifest and embedded SVG assets.
+- `@humation/core`: Framework-independent renderer and UI helpers.
+- `@humation/web-component`: `<humation-avatar>` custom element.
+
+Agent skill:
+- Install with `npx skills add endo-yusuke/humation --skill humation-avatar`.
+
+React quick start:
+
+```tsx
+import { Avatar } from '@humation/react';
+import { humation1 } from '@humation/assets-humation-1';
+
+<Avatar assets={humation1} seed={user.id} size={96} />
+```
+
+Core SVG rendering:
+
+```ts
+import { createAvatar } from '@humation/core';
+import { humation1 } from '@humation/assets-humation-1';
+
+const svg = createAvatar(humation1, { seed: 'felix' }).toString();
+```
+
+Implementation guidance for coding agents:
+- Use `@humation/react` for React UI.
+- Use `@humation/assets-humation-1` for the official asset set.
+- Use `@humation/core` when raw SVG output or picker previews are needed.
+- Use `@humation/web-component` outside React.
+- Do not call a Humation API for avatar rendering.
+- Use `seed` for deterministic generated avatars.
+- Use `selections` and `colors` for user-customized avatars.
+- Part selections accept names, aliases, and canonical IDs.
+- Common selection slots: `head`, `body`, `bottom`, `item`, `glasses`.
+- Common color slots: `hair`, `clothes`, `bottom`, `skin`, `stroke`, `background`.
+
