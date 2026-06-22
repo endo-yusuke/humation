@@ -260,9 +260,11 @@ Recommended output attributes:
 
 ```xml
 <g
-  data-hm-layer-slot="head-main"
+  data-hm-layer-slot="head"
   data-hm-part-id="hm1-p-000023"
   data-hm-selection-slot="head"
+  data-hm-source-group-id="head"
+  data-hm-source-part-id="023"
 >
 ```
 

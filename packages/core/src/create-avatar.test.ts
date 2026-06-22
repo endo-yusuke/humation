@@ -64,6 +64,7 @@ function buildManifest(): HumationManifest {
     parts: [
       {
         id: 'test-p-000001',
+        source: { groupId: 'head', partId: '001' },
         name: 'bun',
         aliases: ['head-bun'],
         selectionSlot: 'head',
@@ -72,6 +73,7 @@ function buildManifest(): HumationManifest {
       },
       {
         id: 'test-p-000002',
+        source: { groupId: 'head', partId: '002' },
         name: 'braids',
         aliases: ['head-braids'],
         selectionSlot: 'head',
@@ -80,6 +82,7 @@ function buildManifest(): HumationManifest {
       },
       {
         id: 'test-p-000003',
+        source: { groupId: 'head', partId: '003' },
         name: 'short',
         aliases: ['head-short'],
         selectionSlot: 'head',
@@ -88,6 +91,7 @@ function buildManifest(): HumationManifest {
       },
       {
         id: 'test-p-000004',
+        source: { groupId: 'item', partId: '000' },
         name: 'none',
         aliases: ['item-none'],
         selectionSlot: 'item',
@@ -96,6 +100,7 @@ function buildManifest(): HumationManifest {
       },
       {
         id: 'test-p-000005',
+        source: { groupId: 'item', partId: '001' },
         name: 'duck',
         aliases: ['item-duck'],
         selectionSlot: 'item',
@@ -202,6 +207,23 @@ describe('color input normalization', () => {
     expect(svg).toContain('fill="var(--hm-hair');
     // the inner svg wrapper is stripped
     expect(svg.match(/<svg/g)?.length).toBe(1);
+  });
+
+  test('emits stable humation data attributes for rendered parts', () => {
+    const svg = createAvatar(manifest, {
+      selections: { head: 'braids', item: 'duck' },
+    }).toString();
+
+    expect(svg).toContain('data-hm-layer-slot="head"');
+    expect(svg).toContain('data-hm-part-id="test-p-000002"');
+    expect(svg).toContain('data-hm-selection-slot="head"');
+    expect(svg).toContain('data-hm-source-group-id="head"');
+    expect(svg).toContain('data-hm-source-part-id="002"');
+    expect(svg).toContain('data-hm-layer-slot="item"');
+    expect(svg).toContain('data-hm-part-id="test-p-000005"');
+    expect(svg).toContain('data-hm-selection-slot="item"');
+    expect(svg).not.toContain('data-group-id=');
+    expect(svg).not.toContain('data-part-id=');
   });
 
   test('rejects svg variable references to undeclared color slots', () => {

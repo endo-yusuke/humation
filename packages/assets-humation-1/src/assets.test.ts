@@ -23,8 +23,11 @@ describe('@humation/assets-humation-1', () => {
     }).toString();
 
     expect(svg).toContain('<svg');
-    expect(svg).toContain('data-group-id="head"');
-    expect(svg).toContain('data-part-id="023"');
+    expect(svg).toContain('data-hm-layer-slot="head"');
+    expect(svg).toContain('data-hm-part-id="hm1-p-000023"');
+    expect(svg).toContain('data-hm-selection-slot="head"');
+    expect(svg).toContain('data-hm-source-group-id="head"');
+    expect(svg).toContain('data-hm-source-part-id="023"');
     expect(svg).toContain('--hm-skin:#FFEECC');
     expect(svg).toContain('fill="var(--hm-hair, #000000)"');
   });
