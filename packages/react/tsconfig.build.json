@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "paths": {
+      "@humation/core": ["../core/dist/index.d.ts"],
+      "@humation/core/*": ["../core/dist/*"]
+    }
+  },
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx", "src/bun-test.d.ts"]
+}

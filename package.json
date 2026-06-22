@@ -1,0 +1,29 @@
+{
+  "name": "humation",
+  "private": true,
+  "description": "Humation - avatar engine and official asset packages",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build:packages": "bun run --cwd packages/core build && bun run --cwd packages/assets-humation-1 build && bun run --cwd packages/react build && bun run --cwd packages/web-component build",
+    "typecheck": "bun run --cwd packages/core typecheck && bun run --cwd packages/assets-humation-1 typecheck && bun run --cwd packages/react typecheck && bun run --cwd packages/web-component typecheck && bun run --cwd examples/node typecheck",
+    "test": "bun run build:packages && bun run --cwd packages/core test && bun run --cwd packages/assets-humation-1 test && bun run --cwd packages/react test && bun run --cwd packages/web-component test && bun run example:node",
+    "example:node": "bun run --cwd examples/node render",
+    "format": "prettier --write \"**/*.{ts,md}\"",
+    "pack:smoke": "node scripts/smoke-packages.mjs",
+    "release:check": "node scripts/check-publish-readiness.mjs",
+    "release:prepare": "node scripts/prepare-release.mjs",
+    "registry:build": "node scripts/build-registry.mjs",
+    "publish:beta": "node scripts/publish-packages.mjs --tag beta",
+    "publish:latest": "node scripts/publish-packages.mjs --tag latest"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,2547 @@
+{
+  "schemaVersion": "1.0",
+  "template": {
+    "id": "humation-1",
+    "shortId": "hm1",
+    "name": "Humation 1",
+    "version": "1.0.1",
+    "license": "MIT"
+  },
+  "defaults": {
+    "selections": {
+      "head": "hm1-p-000001",
+      "body": "hm1-p-000025",
+      "bottom": "hm1-p-000033",
+      "item": "hm1-p-000041",
+      "glasses": "hm1-p-000056"
+    },
+    "colors": {
+      "stroke": "000000",
+      "hair": "000000",
+      "skin": "FFFFFF",
+      "clothes": "FFFFFF",
+      "bottom": "000000"
+    },
+    "background": "F6F5F4",
+    "crop": "avatar"
+  },
+  "colors": [
+    {
+      "id": "background",
+      "label": "Background",
+      "default": "F6F5F4",
+      "cssVariable": "--hm-background",
+      "allowTransparent": true
+    },
+    {
+      "id": "stroke",
+      "label": "Stroke",
+      "default": "000000",
+      "cssVariable": "--hm-stroke"
+    },
+    {
+      "id": "hair",
+      "label": "Hair",
+      "default": "000000",
+      "cssVariable": "--hm-hair"
+    },
+    {
+      "id": "skin",
+      "label": "Skin",
+      "default": "FFFFFF",
+      "cssVariable": "--hm-skin"
+    },
+    {
+      "id": "clothes",
+      "label": "Clothes",
+      "default": "FFFFFF",
+      "cssVariable": "--hm-clothes"
+    },
+    {
+      "id": "bottom",
+      "label": "Bottom",
+      "default": "000000",
+      "cssVariable": "--hm-bottom"
+    }
+  ],
+  "crops": {
+    "avatar": {
+      "x": -4,
+      "y": -4.5,
+      "width": 88,
+      "height": 88
+    }
+  },
+  "selectionSlots": [
+    {
+      "id": "bottom",
+      "label": "Bottom",
+      "defaultPart": "hm1-p-000033",
+      "exclusive": true
+    },
+    {
+      "id": "body",
+      "label": "Body",
+      "defaultPart": "hm1-p-000025",
+      "exclusive": true
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "defaultPart": "hm1-p-000001",
+      "exclusive": true
+    },
+    {
+      "id": "item",
+      "label": "Item",
+      "defaultPart": "hm1-p-000041",
+      "exclusive": true
+    },
+    {
+      "id": "glasses",
+      "label": "Glasses",
+      "defaultPart": "hm1-p-000056",
+      "exclusive": true
+    }
+  ],
+  "uiGroups": [
+    {
+      "id": "bottom",
+      "label": "Bottom",
+      "order": 1,
+      "selectionSlots": [
+        "bottom"
+      ]
+    },
+    {
+      "id": "body",
+      "label": "Body",
+      "order": 2,
+      "selectionSlots": [
+        "body"
+      ]
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "order": 3,
+      "selectionSlots": [
+        "head"
+      ]
+    },
+    {
+      "id": "item",
+      "label": "Item",
+      "order": 4,
+      "selectionSlots": [
+        "item"
+      ]
+    },
+    {
+      "id": "glasses",
+      "label": "Glasses",
+      "order": 5,
+      "selectionSlots": [
+        "glasses"
+      ]
+    }
+  ],
+  "layerSlots": [
+    {
+      "id": "bottom",
+      "label": "Bottom",
+      "order": 1,
+      "offset": {
+        "x": 0,
+        "y": 85
+      },
+      "size": {
+        "width": 80,
+        "height": 107
+      },
+      "hidden": false
+    },
+    {
+      "id": "body",
+      "label": "Body",
+      "order": 2,
+      "offset": {
+        "x": 0,
+        "y": 51
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "hidden": false
+    },
+    {
+      "id": "head",
+      "label": "Head",
+      "order": 3,
+      "offset": {
+        "x": 0,
+        "y": -0.5
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "hidden": false
+    },
+    {
+      "id": "item",
+      "label": "Item",
+      "order": 4,
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "hidden": false
+    },
+    {
+      "id": "glasses",
+      "label": "Glasses",
+      "order": 5,
+      "offset": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "hidden": false
+    }
+  ],
+  "parts": [
+    {
+      "id": "hm1-p-000001",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "001"
+      },
+      "name": "fluffy-bob",
+      "aliases": [
+        "head-fluffy-bob"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000002",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "002"
+      },
+      "name": "round-bob",
+      "aliases": [
+        "head-round-bob"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000003",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "003"
+      },
+      "name": "short",
+      "aliases": [
+        "head-short"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/003.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000004",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "004"
+      },
+      "name": "curly-short",
+      "aliases": [
+        "head-curly-short"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/004.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000005",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "005"
+      },
+      "name": "short-bangs",
+      "aliases": [
+        "head-short-bangs"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/005.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000006",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "006"
+      },
+      "name": "side-swept-short",
+      "aliases": [
+        "head-side-swept-short"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/006.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000007",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "007"
+      },
+      "name": "messy-short",
+      "aliases": [
+        "head-messy-short"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/007.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000008",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "008"
+      },
+      "name": "wavy-medium",
+      "aliases": [
+        "head-wavy-medium"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/008.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000009",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "009"
+      },
+      "name": "flipped-long",
+      "aliases": [
+        "head-flipped-long"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/009.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000010",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "010"
+      },
+      "name": "lob",
+      "aliases": [
+        "head-lob"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/010.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000011",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "011"
+      },
+      "name": "long-straight",
+      "aliases": [
+        "head-long-straight"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/011.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000012",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "012"
+      },
+      "name": "side-swept-lob",
+      "aliases": [
+        "head-side-swept-lob"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/012.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000013",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "013"
+      },
+      "name": "blunt-bob",
+      "aliases": [
+        "head-blunt-bob"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/013.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000014",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "014"
+      },
+      "name": "bun",
+      "aliases": [
+        "head-bun"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/014.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000015",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "015"
+      },
+      "name": "low-side-bun",
+      "aliases": [
+        "head-low-side-bun"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/015.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000016",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "016"
+      },
+      "name": "low-twin-buns",
+      "aliases": [
+        "head-low-twin-buns"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/016.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000017",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "017"
+      },
+      "name": "ponytail",
+      "aliases": [
+        "head-ponytail"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/017.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000018",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "018"
+      },
+      "name": "low-ponytail",
+      "aliases": [
+        "head-low-ponytail"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/018.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000019",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "019"
+      },
+      "name": "low-twin-tails",
+      "aliases": [
+        "head-low-twin-tails"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/019.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000020",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "020"
+      },
+      "name": "braids",
+      "aliases": [
+        "head-braids"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/020.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000021",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "021"
+      },
+      "name": "blunt-long",
+      "aliases": [
+        "head-blunt-long"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/021.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000022",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "022"
+      },
+      "name": "side-swept-long",
+      "aliases": [
+        "head-side-swept-long"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/022.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000023",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "023"
+      },
+      "name": "wavy-long",
+      "aliases": [
+        "head-wavy-long"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/023.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000024",
+      "source": {
+        "groupId": "head",
+        "sourceGroupName": "Head",
+        "partId": "024"
+      },
+      "name": "curly-long",
+      "aliases": [
+        "head-curly-long"
+      ],
+      "selectionSlot": "head",
+      "uiGroups": [
+        "head"
+      ],
+      "layers": [
+        {
+          "layerSlot": "head",
+          "svgPath": "assets/humation-1/head/024.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000025",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "001"
+      },
+      "name": "cropped-shirt",
+      "aliases": [
+        "body-cropped-shirt"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000026",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "002"
+      },
+      "name": "tank-top",
+      "aliases": [
+        "body-tank-top"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000027",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "003"
+      },
+      "name": "drape-tee",
+      "aliases": [
+        "body-drape-tee"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/003.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000028",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "004"
+      },
+      "name": "polo",
+      "aliases": [
+        "body-polo"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/004.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000029",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "005"
+      },
+      "name": "tee",
+      "aliases": [
+        "body-tee"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/005.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000030",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "006"
+      },
+      "name": "shirt",
+      "aliases": [
+        "body-shirt"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/006.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000031",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "007"
+      },
+      "name": "jacket",
+      "aliases": [
+        "body-jacket"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/007.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000032",
+      "source": {
+        "groupId": "body",
+        "sourceGroupName": "Body",
+        "partId": "008"
+      },
+      "name": "hoodie",
+      "aliases": [
+        "body-hoodie"
+      ],
+      "selectionSlot": "body",
+      "uiGroups": [
+        "body"
+      ],
+      "layers": [
+        {
+          "layerSlot": "body",
+          "svgPath": "assets/humation-1/body/008.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000033",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "001"
+      },
+      "name": "wide-pants",
+      "aliases": [
+        "bottom-wide-pants"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000034",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "002"
+      },
+      "name": "tapered-pants",
+      "aliases": [
+        "bottom-tapered-pants"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000035",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "003"
+      },
+      "name": "culottes",
+      "aliases": [
+        "bottom-culottes"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/003.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000036",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "004"
+      },
+      "name": "long-skirt",
+      "aliases": [
+        "bottom-long-skirt"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/004.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000037",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "005"
+      },
+      "name": "mini-skirt",
+      "aliases": [
+        "bottom-mini-skirt"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/005.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000038",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "006"
+      },
+      "name": "midi-skirt",
+      "aliases": [
+        "bottom-midi-skirt"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/006.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000039",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "007"
+      },
+      "name": "flared-skirt",
+      "aliases": [
+        "bottom-flared-skirt"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/007.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000040",
+      "source": {
+        "groupId": "bottom",
+        "sourceGroupName": "Bottom",
+        "partId": "008"
+      },
+      "name": "cropped-pants",
+      "aliases": [
+        "bottom-cropped-pants"
+      ],
+      "selectionSlot": "bottom",
+      "uiGroups": [
+        "bottom"
+      ],
+      "layers": [
+        {
+          "layerSlot": "bottom",
+          "svgPath": "assets/humation-1/bottom/008.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000041",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "000"
+      },
+      "name": "none",
+      "aliases": [
+        "item-none"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/000.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000042",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "009"
+      },
+      "name": "crab-headband",
+      "aliases": [
+        "item-crab-headband"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/009.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000043",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "010"
+      },
+      "name": "tuna-sushi",
+      "aliases": [
+        "item-tuna-sushi"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/010.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000044",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "015"
+      },
+      "name": "shrimp-sushi",
+      "aliases": [
+        "item-shrimp-sushi"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/015.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000045",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "011"
+      },
+      "name": "sprout",
+      "aliases": [
+        "item-sprout"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/011.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000046",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "012"
+      },
+      "name": "beer",
+      "aliases": [
+        "item-beer"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/012.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000047",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "008"
+      },
+      "name": "antennae",
+      "aliases": [
+        "item-antennae"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/008.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000048",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "007"
+      },
+      "name": "bunny-ears",
+      "aliases": [
+        "item-bunny-ears"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/007.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000049",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "006"
+      },
+      "name": "halo",
+      "aliases": [
+        "item-halo"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/006.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000050",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "005"
+      },
+      "name": "crown",
+      "aliases": [
+        "item-crown"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/005.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000051",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "004"
+      },
+      "name": "flower",
+      "aliases": [
+        "item-flower"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/004.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000052",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "003"
+      },
+      "name": "ice-cream",
+      "aliases": [
+        "item-ice-cream"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/003.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000053",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "002"
+      },
+      "name": "duck",
+      "aliases": [
+        "item-duck"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000054",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "001"
+      },
+      "name": "santa-hat",
+      "aliases": [
+        "item-santa-hat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000055",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "014"
+      },
+      "name": "camera",
+      "aliases": [
+        "item-camera"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/014.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000070",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "016"
+      },
+      "name": "wind-chime",
+      "aliases": [
+        "item-wind-chime"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/016.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000071",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "017"
+      },
+      "name": "frog-alt",
+      "aliases": [
+        "item-frog-alt"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/017.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000072",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "018"
+      },
+      "name": "ramune",
+      "aliases": [
+        "item-ramune"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/018.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000073",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "019"
+      },
+      "name": "takoyaki",
+      "aliases": [
+        "item-takoyaki"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/019.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000074",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "020"
+      },
+      "name": "chocolate-banana",
+      "aliases": [
+        "item-chocolate-banana"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/020.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000075",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "021"
+      },
+      "name": "yoyo",
+      "aliases": [
+        "item-yoyo"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/021.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000076",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "022"
+      },
+      "name": "beach-ball",
+      "aliases": [
+        "item-beach-ball"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/022.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000077",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "023"
+      },
+      "name": "sunflower",
+      "aliases": [
+        "item-sunflower"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/023.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000078",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "024"
+      },
+      "name": "eggplant",
+      "aliases": [
+        "item-eggplant"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/024.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000079",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "025"
+      },
+      "name": "shark",
+      "aliases": [
+        "item-shark"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/025.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000080",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "026"
+      },
+      "name": "fox-mask",
+      "aliases": [
+        "item-fox-mask"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/026.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000081",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "027"
+      },
+      "name": "banana",
+      "aliases": [
+        "item-banana"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/027.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000082",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "028"
+      },
+      "name": "watermelon",
+      "aliases": [
+        "item-watermelon"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/028.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000083",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "029"
+      },
+      "name": "pineapple",
+      "aliases": [
+        "item-pineapple"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/029.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000084",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "030"
+      },
+      "name": "candied-apple",
+      "aliases": [
+        "item-candied-apple"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/030.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000085",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "031"
+      },
+      "name": "sunglasses",
+      "aliases": [
+        "item-sunglasses"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/031.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000086",
+      "source": {
+        "groupId": "item",
+        "sourceGroupName": "Item",
+        "partId": "032"
+      },
+      "name": "goggles",
+      "aliases": [
+        "item-goggles"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/item/032.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000056",
+      "source": {
+        "groupId": "glasses",
+        "sourceGroupName": "Glasses",
+        "partId": "000"
+      },
+      "name": "none",
+      "aliases": [
+        "glasses-none"
+      ],
+      "selectionSlot": "glasses",
+      "uiGroups": [
+        "glasses"
+      ],
+      "layers": [
+        {
+          "layerSlot": "glasses",
+          "svgPath": "assets/humation-1/glasses/000.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000057",
+      "source": {
+        "groupId": "glasses",
+        "sourceGroupName": "Glasses",
+        "partId": "001"
+      },
+      "name": "round",
+      "aliases": [
+        "glasses-round"
+      ],
+      "selectionSlot": "glasses",
+      "uiGroups": [
+        "glasses"
+      ],
+      "layers": [
+        {
+          "layerSlot": "glasses",
+          "svgPath": "assets/humation-1/glasses/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000058",
+      "source": {
+        "groupId": "glasses",
+        "sourceGroupName": "Glasses",
+        "partId": "002"
+      },
+      "name": "tiny",
+      "aliases": [
+        "glasses-tiny"
+      ],
+      "selectionSlot": "glasses",
+      "uiGroups": [
+        "glasses"
+      ],
+      "layers": [
+        {
+          "layerSlot": "glasses",
+          "svgPath": "assets/humation-1/glasses/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000059",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "001"
+      },
+      "name": "tabby-cat",
+      "aliases": [
+        "item-tabby-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/001.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000060",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "002"
+      },
+      "name": "cream-cat",
+      "aliases": [
+        "item-cream-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/002.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000061",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "003"
+      },
+      "name": "ginger-cat",
+      "aliases": [
+        "item-ginger-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/003.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000062",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "004"
+      },
+      "name": "white-cat",
+      "aliases": [
+        "item-white-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/004.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000063",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "005"
+      },
+      "name": "black-cat",
+      "aliases": [
+        "item-black-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/005.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000064",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "011"
+      },
+      "name": "tuxedo-cat",
+      "aliases": [
+        "item-tuxedo-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/011.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000065",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "006"
+      },
+      "name": "siamese-cat",
+      "aliases": [
+        "item-siamese-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/006.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000066",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "007"
+      },
+      "name": "gray-cat",
+      "aliases": [
+        "item-gray-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/007.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000067",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "008"
+      },
+      "name": "tabby-tuxedo-cat",
+      "aliases": [
+        "item-tabby-tuxedo-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/008.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000068",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "009"
+      },
+      "name": "calico-cat",
+      "aliases": [
+        "item-calico-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/009.svg"
+        }
+      ]
+    },
+    {
+      "id": "hm1-p-000069",
+      "source": {
+        "groupId": "cat",
+        "sourceGroupName": "Cat",
+        "partId": "010"
+      },
+      "name": "brown-tabby-cat",
+      "aliases": [
+        "item-brown-tabby-cat"
+      ],
+      "selectionSlot": "item",
+      "uiGroups": [
+        "item"
+      ],
+      "layers": [
+        {
+          "layerSlot": "item",
+          "svgPath": "assets/humation-1/cat/010.svg"
+        }
+      ]
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "head-fluffy-bob",
+      "targetId": "hm1-p-000001",
+      "status": "active"
+    },
+    {
+      "alias": "head-round-bob",
+      "targetId": "hm1-p-000002",
+      "status": "active"
+    },
+    {
+      "alias": "head-short",
+      "targetId": "hm1-p-000003",
+      "status": "active"
+    },
+    {
+      "alias": "head-curly-short",
+      "targetId": "hm1-p-000004",
+      "status": "active"
+    },
+    {
+      "alias": "head-short-bangs",
+      "targetId": "hm1-p-000005",
+      "status": "active"
+    },
+    {
+      "alias": "head-side-swept-short",
+      "targetId": "hm1-p-000006",
+      "status": "active"
+    },
+    {
+      "alias": "head-messy-short",
+      "targetId": "hm1-p-000007",
+      "status": "active"
+    },
+    {
+      "alias": "head-wavy-medium",
+      "targetId": "hm1-p-000008",
+      "status": "active"
+    },
+    {
+      "alias": "head-flipped-long",
+      "targetId": "hm1-p-000009",
+      "status": "active"
+    },
+    {
+      "alias": "head-lob",
+      "targetId": "hm1-p-000010",
+      "status": "active"
+    },
+    {
+      "alias": "head-long-straight",
+      "targetId": "hm1-p-000011",
+      "status": "active"
+    },
+    {
+      "alias": "head-side-swept-lob",
+      "targetId": "hm1-p-000012",
+      "status": "active"
+    },
+    {
+      "alias": "head-blunt-bob",
+      "targetId": "hm1-p-000013",
+      "status": "active"
+    },
+    {
+      "alias": "head-bun",
+      "targetId": "hm1-p-000014",
+      "status": "active"
+    },
+    {
+      "alias": "head-low-side-bun",
+      "targetId": "hm1-p-000015",
+      "status": "active"
+    },
+    {
+      "alias": "head-low-twin-buns",
+      "targetId": "hm1-p-000016",
+      "status": "active"
+    },
+    {
+      "alias": "head-ponytail",
+      "targetId": "hm1-p-000017",
+      "status": "active"
+    },
+    {
+      "alias": "head-low-ponytail",
+      "targetId": "hm1-p-000018",
+      "status": "active"
+    },
+    {
+      "alias": "head-low-twin-tails",
+      "targetId": "hm1-p-000019",
+      "status": "active"
+    },
+    {
+      "alias": "head-braids",
+      "targetId": "hm1-p-000020",
+      "status": "active"
+    },
+    {
+      "alias": "head-blunt-long",
+      "targetId": "hm1-p-000021",
+      "status": "active"
+    },
+    {
+      "alias": "head-side-swept-long",
+      "targetId": "hm1-p-000022",
+      "status": "active"
+    },
+    {
+      "alias": "head-wavy-long",
+      "targetId": "hm1-p-000023",
+      "status": "active"
+    },
+    {
+      "alias": "head-curly-long",
+      "targetId": "hm1-p-000024",
+      "status": "active"
+    },
+    {
+      "alias": "body-cropped-shirt",
+      "targetId": "hm1-p-000025",
+      "status": "active"
+    },
+    {
+      "alias": "body-tank-top",
+      "targetId": "hm1-p-000026",
+      "status": "active"
+    },
+    {
+      "alias": "body-drape-tee",
+      "targetId": "hm1-p-000027",
+      "status": "active"
+    },
+    {
+      "alias": "body-polo",
+      "targetId": "hm1-p-000028",
+      "status": "active"
+    },
+    {
+      "alias": "body-tee",
+      "targetId": "hm1-p-000029",
+      "status": "active"
+    },
+    {
+      "alias": "body-shirt",
+      "targetId": "hm1-p-000030",
+      "status": "active"
+    },
+    {
+      "alias": "body-jacket",
+      "targetId": "hm1-p-000031",
+      "status": "active"
+    },
+    {
+      "alias": "body-hoodie",
+      "targetId": "hm1-p-000032",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-wide-pants",
+      "targetId": "hm1-p-000033",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-tapered-pants",
+      "targetId": "hm1-p-000034",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-culottes",
+      "targetId": "hm1-p-000035",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-long-skirt",
+      "targetId": "hm1-p-000036",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-mini-skirt",
+      "targetId": "hm1-p-000037",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-midi-skirt",
+      "targetId": "hm1-p-000038",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-flared-skirt",
+      "targetId": "hm1-p-000039",
+      "status": "active"
+    },
+    {
+      "alias": "bottom-cropped-pants",
+      "targetId": "hm1-p-000040",
+      "status": "active"
+    },
+    {
+      "alias": "item-none",
+      "targetId": "hm1-p-000041",
+      "status": "active"
+    },
+    {
+      "alias": "item-crab-headband",
+      "targetId": "hm1-p-000042",
+      "status": "active"
+    },
+    {
+      "alias": "item-tuna-sushi",
+      "targetId": "hm1-p-000043",
+      "status": "active"
+    },
+    {
+      "alias": "item-shrimp-sushi",
+      "targetId": "hm1-p-000044",
+      "status": "active"
+    },
+    {
+      "alias": "item-sprout",
+      "targetId": "hm1-p-000045",
+      "status": "active"
+    },
+    {
+      "alias": "item-beer",
+      "targetId": "hm1-p-000046",
+      "status": "active"
+    },
+    {
+      "alias": "item-antennae",
+      "targetId": "hm1-p-000047",
+      "status": "active"
+    },
+    {
+      "alias": "item-bunny-ears",
+      "targetId": "hm1-p-000048",
+      "status": "active"
+    },
+    {
+      "alias": "item-halo",
+      "targetId": "hm1-p-000049",
+      "status": "active"
+    },
+    {
+      "alias": "item-crown",
+      "targetId": "hm1-p-000050",
+      "status": "active"
+    },
+    {
+      "alias": "item-flower",
+      "targetId": "hm1-p-000051",
+      "status": "active"
+    },
+    {
+      "alias": "item-ice-cream",
+      "targetId": "hm1-p-000052",
+      "status": "active"
+    },
+    {
+      "alias": "item-duck",
+      "targetId": "hm1-p-000053",
+      "status": "active"
+    },
+    {
+      "alias": "item-santa-hat",
+      "targetId": "hm1-p-000054",
+      "status": "active"
+    },
+    {
+      "alias": "item-camera",
+      "targetId": "hm1-p-000055",
+      "status": "active"
+    },
+    {
+      "alias": "item-wind-chime",
+      "targetId": "hm1-p-000070",
+      "status": "active"
+    },
+    {
+      "alias": "item-frog-alt",
+      "targetId": "hm1-p-000071",
+      "status": "active"
+    },
+    {
+      "alias": "item-ramune",
+      "targetId": "hm1-p-000072",
+      "status": "active"
+    },
+    {
+      "alias": "item-takoyaki",
+      "targetId": "hm1-p-000073",
+      "status": "active"
+    },
+    {
+      "alias": "item-chocolate-banana",
+      "targetId": "hm1-p-000074",
+      "status": "active"
+    },
+    {
+      "alias": "item-yoyo",
+      "targetId": "hm1-p-000075",
+      "status": "active"
+    },
+    {
+      "alias": "item-beach-ball",
+      "targetId": "hm1-p-000076",
+      "status": "active"
+    },
+    {
+      "alias": "item-sunflower",
+      "targetId": "hm1-p-000077",
+      "status": "active"
+    },
+    {
+      "alias": "item-eggplant",
+      "targetId": "hm1-p-000078",
+      "status": "active"
+    },
+    {
+      "alias": "item-shark",
+      "targetId": "hm1-p-000079",
+      "status": "active"
+    },
+    {
+      "alias": "item-fox-mask",
+      "targetId": "hm1-p-000080",
+      "status": "active"
+    },
+    {
+      "alias": "item-banana",
+      "targetId": "hm1-p-000081",
+      "status": "active"
+    },
+    {
+      "alias": "item-watermelon",
+      "targetId": "hm1-p-000082",
+      "status": "active"
+    },
+    {
+      "alias": "item-pineapple",
+      "targetId": "hm1-p-000083",
+      "status": "active"
+    },
+    {
+      "alias": "item-candied-apple",
+      "targetId": "hm1-p-000084",
+      "status": "active"
+    },
+    {
+      "alias": "item-sunglasses",
+      "targetId": "hm1-p-000085",
+      "status": "active"
+    },
+    {
+      "alias": "item-goggles",
+      "targetId": "hm1-p-000086",
+      "status": "active"
+    },
+    {
+      "alias": "glasses-none",
+      "targetId": "hm1-p-000056",
+      "status": "active"
+    },
+    {
+      "alias": "glasses-round",
+      "targetId": "hm1-p-000057",
+      "status": "active"
+    },
+    {
+      "alias": "glasses-tiny",
+      "targetId": "hm1-p-000058",
+      "status": "active"
+    },
+    {
+      "alias": "item-tabby-cat",
+      "targetId": "hm1-p-000059",
+      "status": "active"
+    },
+    {
+      "alias": "item-cream-cat",
+      "targetId": "hm1-p-000060",
+      "status": "active"
+    },
+    {
+      "alias": "item-ginger-cat",
+      "targetId": "hm1-p-000061",
+      "status": "active"
+    },
+    {
+      "alias": "item-white-cat",
+      "targetId": "hm1-p-000062",
+      "status": "active"
+    },
+    {
+      "alias": "item-black-cat",
+      "targetId": "hm1-p-000063",
+      "status": "active"
+    },
+    {
+      "alias": "item-tuxedo-cat",
+      "targetId": "hm1-p-000064",
+      "status": "active"
+    },
+    {
+      "alias": "item-siamese-cat",
+      "targetId": "hm1-p-000065",
+      "status": "active"
+    },
+    {
+      "alias": "item-gray-cat",
+      "targetId": "hm1-p-000066",
+      "status": "active"
+    },
+    {
+      "alias": "item-tabby-tuxedo-cat",
+      "targetId": "hm1-p-000067",
+      "status": "active"
+    },
+    {
+      "alias": "item-calico-cat",
+      "targetId": "hm1-p-000068",
+      "status": "active"
+    },
+    {
+      "alias": "item-brown-tabby-cat",
+      "targetId": "hm1-p-000069",
+      "status": "active"
+    }
+  ]
+}

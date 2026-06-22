@@ -1,0 +1,59 @@
+{
+  "name": "@humation/react",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "React component for Humation avatars.",
+  "license": "MIT",
+  "keywords": [
+    "avatar",
+    "svg",
+    "react",
+    "humation",
+    "illustration",
+    "react-avatar",
+    "user-icon",
+    "profile-picture",
+    "deterministic-avatar",
+    "avatar-generator"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@humation/core": "1.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@humation/assets-humation-1": "1.0.1",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}

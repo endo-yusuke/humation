@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "humation",
+  "homepage": "https://github.com/endo-yusuke/humation",
+  "items": [
+    {
+      "name": "avatar-builder",
+      "type": "registry:block",
+      "title": "Avatar Builder",
+      "description": "Avatar creation UI for Humation: part picker tabs, color controls, randomize, and copy-as-JSON. Built on shadcn/ui.",
+      "dependencies": [
+        "@humation/react",
+        "@humation/assets-humation-1"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/blocks/avatar-builder/avatar-builder.tsx",
+          "type": "registry:component",
+          "target": "components/avatar-builder.tsx"
+        }
+      ]
+    }
+  ]
+}

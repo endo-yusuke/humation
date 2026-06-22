@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@humation/core": ["../core/src/index.ts"],
+      "@humation/core/*": ["../core/src/*"]
+    },
+    "noEmit": true
+  },
+  "include": ["src/**/*.ts"]
+}

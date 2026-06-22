@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@humation/core": ["../../packages/core/src/index.ts"],
+      "@humation/core/*": ["../../packages/core/src/*"],
+      "@humation/assets-humation-1": [
+        "../../packages/assets-humation-1/src/index.ts"
+      ],
+      "@humation/assets-humation-1/*": [
+        "../../packages/assets-humation-1/src/*"
+      ]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

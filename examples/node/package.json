@@ -1,0 +1,17 @@
+{
+  "name": "@humation/example-node",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render": "bun run src/render.ts",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "dependencies": {
+    "@humation/assets-humation-1": "workspace:*",
+    "@humation/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

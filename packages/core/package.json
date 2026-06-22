@@ -1,0 +1,47 @@
+{
+  "name": "@humation/core",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "Core Humation avatar manifest and SVG renderer.",
+  "license": "MIT",
+  "keywords": [
+    "avatar",
+    "svg",
+    "humation",
+    "illustration",
+    "user-icon",
+    "profile-picture",
+    "svg-avatar",
+    "deterministic-avatar",
+    "avatar-generator"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
