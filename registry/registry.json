@@ -1,27 +1,56 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "humation",
-  "homepage": "https://github.com/endo-yusuke/humation",
+  "homepage": "https://github.com/humation-labs/humation",
   "items": [
     {
       "name": "avatar-builder",
       "type": "registry:block",
       "title": "Avatar Builder",
-      "description": "Avatar creation UI for Humation: part picker tabs, color controls, randomize, and copy-as-JSON. Built on shadcn/ui.",
+      "description": "Production-ready Humation avatar builder UI: responsive preview, part picker, color sheet, randomize, PNG/SVG export, and JSON state copy. Built on shadcn/ui.",
       "dependencies": [
+        "@humation/core",
         "@humation/react",
-        "@humation/assets-humation-1"
+        "@humation/assets-humation-1",
+        "lucide-react"
       ],
       "registryDependencies": [
         "button",
-        "card",
+        "scroll-area",
+        "sheet",
         "tabs"
       ],
+      "docs": "Use this block as the starting point for Humation avatar creation UI. Do not recreate a simplified picker from scratch. The block already includes responsive layout, selection state without layout shift, color controls, randomize, PNG/SVG export states, and local Humation package rendering with no API calls.",
       "files": [
         {
           "path": "registry/blocks/avatar-builder/avatar-builder.tsx",
           "type": "registry:component",
-          "target": "components/avatar-builder.tsx"
+          "target": "@components/humation/avatar-builder.tsx"
+        },
+        {
+          "path": "registry/blocks/avatar-builder/avatar-preview.tsx",
+          "type": "registry:component",
+          "target": "@components/humation/avatar-preview.tsx"
+        },
+        {
+          "path": "registry/blocks/avatar-builder/part-picker.tsx",
+          "type": "registry:component",
+          "target": "@components/humation/part-picker.tsx"
+        },
+        {
+          "path": "registry/blocks/avatar-builder/color-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/humation/color-sheet.tsx"
+        },
+        {
+          "path": "registry/blocks/avatar-builder/avatar-state.ts",
+          "type": "registry:lib",
+          "target": "@lib/humation/avatar-state.ts"
+        },
+        {
+          "path": "registry/blocks/avatar-builder/export-avatar.ts",
+          "type": "registry:lib",
+          "target": "@lib/humation/export-avatar.ts"
         }
       ]
     }

@@ -2,7 +2,7 @@
 
 Humation 1 manifest and SVG assets.
 
-> **[Docs](https://humation.app/docs)** | **[GitHub](https://github.com/endo-yusuke/humation)**
+> **[Docs](https://humation.app/docs)** | **[GitHub](https://github.com/humation-labs/humation)**
 
 ```ts
 import { createAvatar } from "@humation/core";

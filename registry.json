@@ -1,0 +1,6 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "humation",
+  "homepage": "https://github.com/humation-labs/humation",
+  "include": ["registry/registry.json"]
+}

@@ -5,8 +5,8 @@ One seed in, one deterministic avatar out. No AI, no API calls.
 
 <p align="center">
   <a href="https://www.npmjs.com/package/@humation/react"><img src="https://img.shields.io/npm/v/@humation/react?label=%40humation%2Freact" alt="@humation/react on npm" /></a>
-  <a href="https://github.com/endo-yusuke/humation/releases"><img src="https://img.shields.io/github/v/release/endo-yusuke/humation?label=release" alt="GitHub release" /></a>
-  <a href="https://skills.sh/endo-yusuke/humation"><img src="https://skills.sh/b/endo-yusuke/humation" alt="Humation on skills.sh" /></a>
+  <a href="https://github.com/humation-labs/humation/releases"><img src="https://img.shields.io/github/v/release/humation-labs/humation?label=release" alt="GitHub release" /></a>
+  <a href="https://skills.sh/humation-labs/humation"><img src="https://skills.sh/b/humation-labs/humation" alt="Humation on skills.sh" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT license" /></a>
 </p>
 
@@ -51,7 +51,26 @@ import { humation1 } from '@humation/assets-humation-1';
 etc.). `selections` lets you pick exact parts per slot. You can combine both —
 `selections` overrides whatever `seed` would have chosen for those slots.
 
-### 2. Build a picker UI
+### 2. Add a designed avatar builder
+
+For a complete avatar creation UI, install the shadcn block:
+
+```bash
+npx shadcn@latest add humation-labs/humation/avatar-builder
+```
+
+```tsx
+import { AvatarBuilder } from '@/components/humation/avatar-builder';
+
+<AvatarBuilder onChange={(state) => saveAvatar(state)} />
+```
+
+The block copies app-owned source into your project. It includes a responsive
+preview, part picker, color sheet, randomize, PNG/SVG export, and JSON state
+copy. Start from this block instead of asking an AI coding tool to invent an
+avatar picker from scratch.
+
+### 3. Build a custom picker UI
 
 Use the core helpers to build a part selection interface:
 
@@ -74,19 +93,16 @@ const thumbnail = createPartPreview(humation1, heads[0], {
 (e.g. all cat variants across slots). Available slots: `head`, `body`,
 `bottom`, `item`, `glasses`.
 
-<!-- Avatar builder UI component (copy-paste, not a package) will be available
-     via the shadcn registry once this repository is public. -->
-
-### 3. Give an AI coding agent Humation context
+### 4. Give an AI coding agent Humation context
 
 ```bash
-npx skills add endo-yusuke/humation --skill humation-avatar
+npx skills add humation-labs/humation --skill humation-avatar
 ```
 
 This installs concise package-selection and implementation guidance for agents
 that support Skills.sh.
 
-### 4. Render SVG anywhere (no framework)
+### 5. Render SVG anywhere (no framework)
 
 ```bash
 npm install @humation/core @humation/assets-humation-1

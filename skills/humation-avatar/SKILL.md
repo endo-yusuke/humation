@@ -72,10 +72,21 @@ defineAvatarElement(humation1);
 Install the copy-paste builder block:
 
 ```bash
-npx shadcn@latest add https://raw.githubusercontent.com/endo-yusuke/humation/main/r/avatar-builder.json
+npx shadcn@latest add humation-labs/humation/avatar-builder
 ```
 
-The builder is app-owned source code. Restyle it inside the consuming app.
+Then import it from the installed source:
+
+```tsx
+import { AvatarBuilder } from '@/components/humation/avatar-builder';
+
+<AvatarBuilder onChange={(state) => saveAvatar(state)} />
+```
+
+The builder is app-owned source code. It already includes responsive preview,
+part picker tabs, a color sheet, randomize, PNG/SVG export states, and JSON
+copy. Prefer installing and adapting this block rather than generating a small
+one-off picker UI.
 
 ## Picker Helpers
 
@@ -105,4 +116,3 @@ Common color slots are `hair`, `clothes`, `bottom`, `skin`, `stroke`, and
 
 Colors use CSS custom properties in the rendered SVG, such as `--hm-hair` and
 `--hm-stroke`. Hex values can be passed with or without `#`.
-

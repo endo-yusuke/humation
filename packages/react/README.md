@@ -2,7 +2,7 @@
 
 React component for Humation avatars.
 
-> **[Docs](https://humation.app/docs)** | **[GitHub](https://github.com/endo-yusuke/humation)**
+> **[Docs](https://humation.app/docs)** | **[GitHub](https://github.com/humation-labs/humation)**
 
 ```tsx
 import { Avatar } from '@humation/react';

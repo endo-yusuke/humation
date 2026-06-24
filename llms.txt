@@ -6,7 +6,7 @@ API call is required for rendering.
 
 Primary docs:
 - https://humation.app/docs
-- https://github.com/endo-yusuke/humation
+- https://github.com/humation-labs/humation
 
 Packages:
 - `@humation/react`: React `<Avatar>` component.
@@ -14,8 +14,14 @@ Packages:
 - `@humation/core`: Framework-independent renderer and UI helpers.
 - `@humation/web-component`: `<humation-avatar>` custom element.
 
+Designed avatar builder UI:
+- Install with `npx shadcn@latest add humation-labs/humation/avatar-builder`.
+- Import `AvatarBuilder` from `@/components/humation/avatar-builder`.
+- Use this block as the starting point for avatar creation UI instead of
+  inventing a simplified picker.
+
 Agent skill:
-- Install with `npx skills add endo-yusuke/humation --skill humation-avatar`.
+- Install with `npx skills add humation-labs/humation --skill humation-avatar`.
 
 React quick start:
 
@@ -40,10 +46,10 @@ Implementation guidance for coding agents:
 - Use `@humation/assets-humation-1` for the official asset set.
 - Use `@humation/core` when raw SVG output or picker previews are needed.
 - Use `@humation/web-component` outside React.
+- Use the shadcn `avatar-builder` block for polished avatar creation UI.
 - Do not call a Humation API for avatar rendering.
 - Use `seed` for deterministic generated avatars.
 - Use `selections` and `colors` for user-customized avatars.
 - Part selections accept names, aliases, and canonical IDs.
 - Common selection slots: `head`, `body`, `bottom`, `item`, `glasses`.
 - Common color slots: `hair`, `clothes`, `bottom`, `skin`, `stroke`, `background`.
-

@@ -4,13 +4,13 @@
   "type": "module",
   "description": "React component for Humation avatars.",
   "license": "MIT",
-  "homepage": "https://github.com/endo-yusuke/humation#readme",
+  "homepage": "https://github.com/humation-labs/humation#readme",
   "bugs": {
-    "url": "https://github.com/endo-yusuke/humation/issues"
+    "url": "https://github.com/humation-labs/humation/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/endo-yusuke/humation.git",
+    "url": "git+https://github.com/humation-labs/humation.git",
     "directory": "packages/react"
   },
   "keywords": [

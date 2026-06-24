@@ -6,7 +6,7 @@ Humation v1 までに確定した設計判断の要約。
 
 ## リポジトリ構成と開発フロー
 
-- **このリポジトリ(endo-yusuke/humation)がOSSの正本。** runtime packages、
+- **このリポジトリ(humation-labs/humation)がOSSの正本。** runtime packages、
   asset snapshots、registry block、docs をここで管理する。
 - **アセットとmanifestは生成物。** `packages/assets-humation-1` の
   manifest.json / assets/\*\* / src/embedded.ts 等は同期された snapshot として
